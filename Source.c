@@ -9,16 +9,16 @@ int main()
 	setlocale(LC_ALL, "Rus");
 	double min, max, drob, d, sum1 = 0;
 	int k, g, n;
-	printf("Введите количество: ");
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ ГЄГ®Г«ГЁГ·ГҐГ±ГІГўГ®: ");
 	scanf_s("%d", &n);
 	if (n <= 0)
 	{
 		printf("Error, n <= 0");
 		return 0;
 	}
-	printf("Введите минимум: ");
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ Г¬ГЁГ­ГЁГ¬ГіГ¬: ");
 	scanf_s("%lf", &min);
-	printf("Введите максимум: ");
+	printf("Г‚ГўГҐГ¤ГЁГІГҐ Г¬Г ГЄГ±ГЁГ¬ГіГ¬: ");
 	scanf_s("%lf", &max);
 	if (min > max)
 	{
@@ -42,11 +42,11 @@ int main()
 		{
 			if (k == mas1[g])
 			{
-				sum1 -= mas[g];
+				sum1 -= 2 * mas[g];
 			}
 		}
 	}
-	printf("Сумма равна: %lf\n", sum1);
+	printf("Г‘ГіГ¬Г¬Г  Г°Г ГўГ­Г : %lf\n", sum1);
 	free(mas);
 	free(mas1);
 	return 0;
